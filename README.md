@@ -1,5 +1,4 @@
 # main
 
 
-this is the readme
-jiojkojko;ko
+school computers project
