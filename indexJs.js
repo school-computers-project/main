@@ -8,3 +8,4 @@ document.addEventListener("DOMContentLoaded", function () {
         duration: .1
     })
 });
+
