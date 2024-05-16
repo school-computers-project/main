@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: #C1DFF0;
+	
+}
+
+p{
+	font-size: 25px;
+	color:#6160E3;
+	font-family: "Arial", "Courier New", monospace;
+
+	font-weight: bold;
+}
+p2{
+	font-size: 25px;
+	color:#6160E3;
+	font-family: "Arial", "Courier New", monospace;
+
+}
+
+
+
+button{
+	color:white;
+	font-size:40px;
+	background-color:#057CE3;
+	border-radius:5px;
+	border-color:#FFFFFF;
+	border-width:thick;
+	border-radius:290px;
+	border-style:inherit;
+}

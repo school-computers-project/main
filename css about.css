@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: #C1DFF0;
+	
+}
+
+img{
+	
+	border-radius: 290px;
+	border-style:dotted;
+	border-color: #057CE3;
+	border-width: thick;
+}
+
+button{
+	color:white;
+	font-size:40px;
+	background-color:#057CE3;
+	border-radius:5px;
+	border-color:#FFFFFF;
+	border-width:thick;
+	border-style:inherit;
+	border-radius:290px;
+}
+
+p{
+	font-size: 40px;
+	text-align: center;
+	font-family: "Arial", "Courier New", monospace;
+	color:#6160E3;
+	font-weight: bold; 
+}
+
+p1{
+	font-size:25px;
+	text-align: center;
+	font-family: "Arial", "Courier New", monospace;
+	color:#;
+	font-weight: bold; 
+
+}
+
