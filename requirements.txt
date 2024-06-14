@@ -1,6 +1,6 @@
-# This file contains the direct dependencies required for building the docs
+# This file contains the direct dependencies required for backend
 # To install them all run 'pip install -r requirements.txt' in the same directory
 
-mkdocs == 1.5.3
-mkdocs-material == 9.5.16
-mkdocs-redirects == 1.2.1
+flask
+requests
+gunicorn #(production only!)
