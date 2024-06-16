@@ -22,7 +22,7 @@ Site filesystem structure:
 ├── .gitignore
 ├── main.py
 ├── README.md
-
+└── 
 
 ```
 
