@@ -24,8 +24,21 @@ Site filesystem structure:
 ├── README.md
 └── 
 
+Site structure:
 ```
 
 ```
 
-```
+
+Aesthetics:
+
+The website will be using css for themeing, and gsap and scrollmagic libraries for animations using a js backend.
+
+Some implemented aesthetics:
+
+- Sticky / smooth scroll
+- Animations for scrolling, menus
+- Nice looking color pallette
+- Images showing go-karts and tracks
+- Animations
+
