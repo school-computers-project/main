@@ -4,5 +4,25 @@
 
 ### Navagational structure:
 
-View the structure below:
+Site filesystem structure:
 
+``` 
+├── src
+│   ├── 
+│   │   ├── 
+│   ├── 
+│   ├── 
+│   ├── 
+├── public
+│   ├── 
+│   │   ├── 
+│   ├── 
+│   ├── 
+│   ├── 
+├── 
+├── 
+├── 
+├── 
+└── 
+
+```
