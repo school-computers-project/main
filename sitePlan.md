@@ -8,8 +8,8 @@ Site filesystem structure:
 
 ``` 
 ├── static
-│   ├── 
-│   │   ├── 
+│   ├── assets
+│   │   ├── image / video content here
 │   ├── 
 │   ├── 
 │   ├── 
@@ -20,9 +20,9 @@ Site filesystem structure:
 │   ├── 
 │   ├── 
 ├── 
-├── 
-├── 
-├── 
+├── .gitignore
+├── main.py
+├── README.md
 └── 
 
 ```
