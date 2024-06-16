@@ -24,11 +24,8 @@ Site filesystem structure:
 ├── README.md
 └── 
 
-<<<<<<< HEAD
 ```
 
 ```
 
-=======
->>>>>>> 001bc39acd38023db88315662872d306d60693d8
 ```
