@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <!-- <link rel="stylesheet" href="styles.css">  -->
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles.css') }}">
     <!-- "{{ url_for('static',filename='styles/mainpage.css') }}">
     <link rel="stylesheet" hrjsef="styles.css"> 
     -->
@@ -19,59 +19,71 @@
 
 
 <body>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!--- ALL YOUR CONTENT HERE --->
 
-    <div class="navbar">
-        <!-- add a navbar with animations here -->
 
-    </div>
-    <!-- <center>
+
+            <div class="navbar">
+                <!-- add a navbar with animations here -->
+
+            </div>
+            <!-- <center>
         <button onclick="document.location='indexkart.html' ">Go Back<br>
         </button>
     </center> -->
-    <div class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li class="dropdown">
-                <a href="#services" class="dropbtn">Services</a>
-                <div class="dropdown-content">
-                    <a href="#service1">Service 1</a>
-                    <a href="#service2">Service 2</a>
-                    <a href="#service3">Service 3</a>
-                </div>
-            </li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-    <header>
-        <!-- <div class="background-image"> -->
-            <div class="background-video">
-                <video autoplay="" muted loop="" playsinline="true">
-                    <source src="static/assets/gokart1080.mp4" type="video/mp4">
-                    Your browser does not support the video tag <!-- backup warning-->
-                </video>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#services" class="dropbtn">Services</a>
+                        <div class="dropdown-content">
+                            <a href="#service1">Service 1</a>
+                            <a href="#service2">Service 2</a>
+                            <a href="#service3">Service 3</a>
+                        </div>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            
-        <!-- </div> -->
-        <div id="textContainer">
-            <h1 class="textappear"><span>V</span><span>e</span><span>l</span><span>o</span><span>c</span><span>i</span><span>k</span><span>i</span><span>d</span><span>s</span></h1>
-        </div>
-    </header>
-    <!-- <p>About Velocikids</p> -->
+            <header>
+                <!-- <div class="background-image"> -->
+                <div class="background-video">
+                    <video autoplay="" muted loop="" playsinline="true">
+                        <source src="static/assets/gokart1080.mp4" type="video/mp4">
+                        Your browser does not support the video tag <!-- backup warning-->
+                    </video>
+                </div>
 
-    <!-- <center>
+                <!-- </div> -->
+                <div id="textContainer">
+                    <h1 class="textappear">
+                        <span>V</span><span>e</span><span>l</span><span>o</span><span>c</span><span>i</span><span>k</span><span>i</span><span>d</span><span>s</span>
+                    </h1>
+                </div>
+            </header>
+            <!-- <p>About Velocikids</p> -->
+
+            <!-- <center>
         <p1>Velocikids is the premier go karting site in the Lower Mainland aimed at children aged 7-17. We provide
             world-renowned instructors, state-of-the-art go karts, and award-winning indoor and outdoor tracks. Located
             in downtown Port Moody, we are the go-to site for all your speed needs!</p1>
     </center> -->
 
-    <center> <img src="static/assets/art2.png" alt="helmet1" width="19.7%"> </center>
+            <center> <img src="static/assets/art2.png" alt="helmet1" width="19.7%"> </center>
 
+        </div>
+    </div>
+    <!-- position: fixed elements can go outside --->
 </body>
+
 <script src="https://unpkg.com/split-type"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
 
 <!-- <script src="indexJs.js"></script> -->
-<script src= "{{ url_for('static',filename='indexJs.js') }}"></script>
+<script src="{{ url_for('static',filename='indexJs.js') }}"></script>
+
 </html>
