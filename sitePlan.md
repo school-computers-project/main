@@ -13,7 +13,7 @@ Site filesystem structure:
 │   ├── 
 │   ├── 
 │   ├── 
-├── public
+├── templates
 │   ├── 
 │   │   ├── 
 │   ├── 
