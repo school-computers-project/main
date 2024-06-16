@@ -7,7 +7,7 @@
 Site filesystem structure:
 
 ``` 
-├── src
+├── static
 │   ├── 
 │   │   ├── 
 │   ├── 
