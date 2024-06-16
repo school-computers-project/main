@@ -1,8 +1,9 @@
 # main
 
 
-school computers project
+School computers project
 
+Do note that this repo comes with full production server, so viewing site normally does not work. View the live site [here]()
 
 # Production setup 
 
