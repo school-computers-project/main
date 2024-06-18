@@ -36,6 +36,7 @@ gsap.fromTo('.kartAnim',
     }
 );
 
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 ScrollTrigger.normalizeScroll(true)
 
