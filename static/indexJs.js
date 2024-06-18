@@ -50,11 +50,11 @@ let smoother = ScrollSmoother.create({
 });
 
 // pin box-c when it reaches the center of the viewport, for 300px
-ScrollTrigger.create({
-  trigger: ".box-c",
-  pin: true,
-  start: "center center",
-  end: "+=300",
-  markers: true
-});
+// ScrollTrigger.create({
+//   trigger: ".box-c",
+//   pin: true,
+//   start: "center center",
+//   end: "+=300",
+//   markers: true
+// });
 
