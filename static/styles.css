@@ -176,14 +176,3 @@ html, body {
   padding: 0;
 }
 
-.navbar {
-  height: 60px; /* Adjust based on actual content size */
-}
-
-body, #smooth-wrapper {
-  margin: 0;
-  padding: 0;
-}
-#smooth-content {
-  padding-top: 60px; /* Match the navbar height */
-}
