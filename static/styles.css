@@ -173,3 +173,7 @@ html, body {
   /* set a height because the contents are position: absolute, thus natively there's no height */
   height: 4000px;
 }
+
+.navbar {
+  height: 60px; /* Adjust based on actual content size */
+}
