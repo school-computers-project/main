@@ -145,3 +145,12 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.kartAnim{
+  z-index: 100;
+} 
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}

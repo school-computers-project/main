@@ -11,11 +11,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 gsap.registerPlugin(ScrollTrigger)
 
-gsap.to('.textappear', {
-    scrollTrigger: '.textappear', // start animation when ".box" enters the viewport
-    delay: 0.5,
-    duration:2.5,
-    // ease: "back.out(1.7)",
-    ease: "bounce.out",
-    x: 500
-});
+// gsap.to('.kartAnim', {
+//     scrollTrigger: '.kartAnim', // start animation when ".box" enters the viewport
+//     delay: 0.5,
+//     duration:2.5,
+//     // ease: "back.out(1.7)",
+//     ease: "bounce.out",
+//     x: 500
+// });
+gsap.fromTo('.kartAnim', 
+    { x: -1000 }, // Initial position
+    {
+        // scrollTrigger: {
+        //     trigger: '.kartAnim',
+        //     start: 'top center', 
+        //     end: 'bottom center', 
+        //     scrub: true, // Smooths animation
+        //     markers: true // Optional: Adds visual markers
+        // },
+        delay: 0.5,
+        duration: 3.5, 
+        ease: "bounce.out",
+        x: 4000 // Final position, adjust smaller if you want to see kart bounce back
+    }
+);
