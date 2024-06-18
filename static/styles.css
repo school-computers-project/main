@@ -155,6 +155,11 @@ html, body {
   overflow-x: hidden;
 }
 
+.landingFullScreen{
+  top: 1000px;
+
+}
+
 .box-c{
   top: 1000px;
 }
