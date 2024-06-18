@@ -168,5 +168,5 @@ html, body {
 
   width: 100%;
   /* set a height because the contents are position: absolute, thus natively there's no height */
-  /* height: 4000px; */
+  height: 4000px;
 }
