@@ -177,3 +177,8 @@ html, body {
 .navbar {
   height: 60px; /* Adjust based on actual content size */
 }
+
+body, #smooth-wrapper {
+  margin: 0;
+  padding: 0;
+}
