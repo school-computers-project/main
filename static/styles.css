@@ -184,3 +184,6 @@ body, #smooth-wrapper {
   margin: 0;
   padding: 0;
 }
+#smooth-content {
+  padding-top: 60px; /* Match the navbar height */
+}
