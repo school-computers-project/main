@@ -171,8 +171,18 @@ html, body {
 
   width: 100%;
   /* set a height because the contents are position: absolute, thus natively there's no height */
-  height: 4000px;
+  /* height: 4000px; */
   margin: 0;
   padding: 0;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  /* scroll-snap-points-y: repeat(300px); */
+}
+
+.snapPoints {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
