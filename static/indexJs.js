@@ -106,12 +106,12 @@ ScrollTrigger.create({
 
 
 var tl,
-    bgColor = "white",
+    bgColor = "#CC0000",
     easing = Power0.easeNone;
 
 tl = new TimelineMax({
         repeat:-1,
-        yoyo:false
+        yoyo:true
 });
 
 // top
@@ -124,7 +124,7 @@ tl.fromTo("#top-side", 1,
     ease: easing
    }, 
    {
-    width: "40vw", 
+    width: 200, 
     background: bgColor
    }
 );
@@ -154,7 +154,7 @@ tl.fromTo("#bottom-side", 1,
     ease: easing
    }, 
    {
-    width: "40vw", 
+    width: 200, 
     background: bgColor
    }
 );
