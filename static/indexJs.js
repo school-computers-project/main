@@ -106,7 +106,7 @@ ScrollTrigger.create({
 
 
 var tl,
-    bgColor = "#CC0000",
+    bgColor = "white",
     easing = Power0.easeNone;
 
 tl = new TimelineMax({
