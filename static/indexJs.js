@@ -118,6 +118,7 @@ function isInViewport(element) {
 if (isInViewport(document.querySelector("#smooth-content"))) {
   console.log("In viewport");
 }
+
 var tl,
     bgColor = "white",
     easing = Power0.easeNone;
