@@ -106,9 +106,9 @@ ScrollTrigger.create({
   }
 });
 
-if (isInViewport(document.querySelector(".containerBackground"))) {
-  console.log("In viewport");
-}
+// if (isInViewport(document.querySelector(".containerBackground"))) {
+//   console.log("In viewport");
+// }
 
 // function isInViewport(element) {
 // if (ScrollTrigger.isInViewport(".centered", 0.2)) {
