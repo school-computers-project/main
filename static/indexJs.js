@@ -105,71 +105,71 @@ ScrollTrigger.create({
 });
 
 
-// var tl,
-//     bgColor = "#CC0000",
-//     easing = Power0.easeNone;
+var tl,
+    bgColor = "#CC0000",
+    easing = Power0.easeNone;
 
-// tl = new TimelineMax({
-//         repeat:-1,
-//         yoyo:false
-// });
+tl = new TimelineMax({
+        repeat:-1,
+        yoyo:false
+});
 
-// // top
-// tl.fromTo("#top-side", 1, 
-//    {
-//     width: 0, 
-//     background: bgColor,
-//     immediateRender: false,
-//     autoRound: false,
-//     ease: easing
-//    }, 
-//    {
-//     width: "40vw", 
-//     background: bgColor
-//    }
-// );
+// top
+tl.fromTo("#top-side", 1, 
+   {
+    width: 0, 
+    background: bgColor,
+    immediateRender: false,
+    autoRound: false,
+    ease: easing
+   }, 
+   {
+    width: "40vw", 
+    background: bgColor
+   }
+);
 
-// // right
-// tl.fromTo("#right-side", 1, 
-//    {
-//     height: 0, 
-//     background: bgColor,
-//     immediateRender: false,
-//     autoRound: false,
-//     ease: easing
-//    }, 
-//    {
-//     height: 200, 
-//     background: bgColor
-//    }
-// );
+// right
+tl.fromTo("#right-side", 1, 
+   {
+    height: 0, 
+    background: bgColor,
+    immediateRender: false,
+    autoRound: false,
+    ease: easing
+   }, 
+   {
+    height: 200, 
+    background: bgColor
+   }
+);
 
-// // bottom
-// tl.fromTo("#bottom-side", 1, 
-//    {
-//     width: 0, 
-//     background: bgColor,
-//     immediateRender: false,
-//     autoRound: false,
-//     ease: easing
-//    }, 
-//    {
-//     width: "40vw", 
-//     background: bgColor
-//    }
-// );
+// bottom
+tl.fromTo("#bottom-side", 1, 
+   {
+    width: 0, 
+    background: bgColor,
+    immediateRender: false,
+    autoRound: false,
+    ease: easing
+   }, 
+   {
+    width: "40vw", 
+    background: bgColor
+   }
+);
 
-// // left
-// tl.fromTo("#left-side", 1, 
-//    {
-//     height: 0, 
-//     background: bgColor,
-//     immediateRender: false,
-//     autoRound: false,
-//     ease: easing
-//    }, 
-//    {
-//     height: 200, 
-//     background: bgColor
-//    }
-// );
+// left
+tl.fromTo("#left-side", 1, 
+   {
+    height: 0, 
+    background: bgColor,
+    immediateRender: false,
+    autoRound: false,
+    ease: easing
+   }, 
+   {
+    height: 200, 
+    background: bgColor
+   }
+);
