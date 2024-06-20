@@ -118,6 +118,11 @@ function isInViewport(element) {
 if (isInViewport(document.querySelector(".containerBackground"))) {
   console.log("In viewport");
 }
+if (ScrollTrigger.isInViewport(element, 0.2)) {
+  console.log("In viewport");
+
+}
+
 
 var tl,
     bgColor = "white",
