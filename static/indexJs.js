@@ -106,7 +106,7 @@ ScrollTrigger.create({
   }
 });
 
-function isInViewport(element) {
+function isInViewport(".containerBackground") {
 
   var tl,
   bgColor = "white",
