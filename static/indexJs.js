@@ -117,6 +117,14 @@ ScrollTrigger.create({
 // }
 gsap.registerPlugin(ScrollTrigger);
 
+ScrollTrigger.create({
+  trigger: ".centered",
+  start: "center center", // Adjust this value based on when you want the animation to start
+  end: "bottom center", // Adjust this value based on when you want the animation to end
+  onEnter: () => tl.play(), // Play the animation when the trigger enters the viewport
+  onLeaveBack: () => tl.pause(0) // Pause the animation when leaving the viewport backwards (e.g., scrolling up)
+});
+
 var tl;
 const bgColor = "white";
 const easing = Power0.easeNone;
@@ -181,13 +189,7 @@ tl.fromTo("#top-side", 0.75,
    });
 
 // Create a ScrollTrigger instance for the.centered element
-ScrollTrigger.create({
-    trigger: ".centered",
-    start: "center center", // Adjust this value based on when you want the animation to start
-    end: "bottom center", // Adjust this value based on when you want the animation to end
-    onEnter: () => tl.play(), // Play the animation when the trigger enters the viewport
-    onLeaveBack: () => tl.pause(0) // Pause the animation when leaving the viewport backwards (e.g., scrolling up)
-});
+
 
 // var tl,
 //     bgColor = "white",
