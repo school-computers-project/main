@@ -71,13 +71,13 @@ let smoother = ScrollSmoother.create({
   normalizeScroll: true
 });
 
-ScrollTrigger.create({
-  trigger: ".secondContainer",
-  pin: true,
-  start: "100vh",
-  end: "+=0",
-  markers: false //remove when fix
-});
+// ScrollTrigger.create({
+//   trigger: ".secondContainer",
+//   pin: true,
+//   start: "100vh",
+//   end: "+=0",
+//   markers: false //remove when fix
+// });
 
 
 let panels = gsap.utils.toArray(".panel");
