@@ -115,6 +115,8 @@ if (isInViewport(document.querySelector(".containerBackground"))) {
 //   console.log("In viewport");
 
 // }
+
+async function checkViewport() {
   // Use await with ScrollTrigger.isInViewport to ensure it completes before proceeding
   const isInViewport = await ScrollTrigger.isInViewport(".centered", 0.2);
   
