@@ -68,7 +68,7 @@ ScrollSmoother.create({
 let smoother = ScrollSmoother.create({
   smooth: 1,
   effects: true,
-  normalizeScroll: true
+  normalizeScroll: true,
   smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
 
 });
