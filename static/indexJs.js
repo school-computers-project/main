@@ -106,16 +106,14 @@ ScrollTrigger.create({
 
 
 var tl,
-    bgColor = "white",
+    bgColor = "#CC0000",
     easing = Power0.easeNone;
 
 tl = new TimelineMax({
-        repeat:0,
+        repeat:-1,
         yoyo:false
 });
 
-
-tl.addLabel('start')
 // top
 tl.fromTo("#top-side", 1, 
    {
