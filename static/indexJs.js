@@ -128,7 +128,7 @@ tl = gsap.timeline({
 });
 
 // Add animations to the timeline
-tl.fromTo("#top-side", 0.5, 
+tl.fromTo("#top-side", 0.75, 
    {
     width: 0, 
     background: bgColor,
@@ -141,7 +141,7 @@ tl.fromTo("#top-side", 0.5,
     background: bgColor
    }
 )
-.fromTo("#right-side", 0.5, 
+.fromTo("#right-side", 0.25, 
    {
     height: 0, 
     background: bgColor,
