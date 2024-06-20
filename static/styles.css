@@ -272,7 +272,7 @@ p {
   display: block;
   width: 40vw;
   height: 200px;
-  background-color: rgba(255, 255, 255, 0.245);
+  background-color: rgba(255, 255, 255, 0.545); /* white with 0.5 opacity */
 }
 
 #left-side,
