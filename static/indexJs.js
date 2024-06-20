@@ -106,27 +106,15 @@ ScrollTrigger.create({
   }
 });
 
-// if (isInViewport(document.querySelector(".containerBackground"))) {
-//   console.log("In viewport");
-// }
 
-// function isInViewport(element) {
-// if (ScrollTrigger.isInViewport(".centered", 0.2)) {
-//   console.log("In viewport");
 
-// }
-
-async function checkViewport() {
-  // Use await with ScrollTrigger.isInViewport to ensure it completes before proceeding
-  const isInViewport = await ScrollTrigger.isInViewport(".centered", 0.2);
-  
-  if (isInViewport) {
-    console.log("In viewport");
-  }
+if (isInViewport(document.querySelector(".containerBackground"))) {
+  console.log("In viewport");
 }
+if (ScrollTrigger.isInViewport(".centered", 0.2)) {
+  console.log("In viewport");
 
-// Call the asynchronous function
-checkViewport();
+}
 
 
 var tl,
