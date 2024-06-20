@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css">  -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles.css') }}">
+    <!-- "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <link rel="stylesheet" hrjsef="styles.css"> 
+    -->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /* .scrollStart {
+            max-height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        } */
+    </style>
+</head>
+
+
+<body>
+
+    <!--- ALL YOUR CONTENT HERE --->
+    <div class="container">
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#services" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#service1">Service 1</a>
+                        <a href="#service2">Service 2</a>
+                        <a href="#service3">Service 3</a>
+                    </div>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="{{ url_for('templates', 'contact.html') }}">Contact</a></li>
+            </ul>
+        </div>
+        <div class="smooth-content" id="smooth-content">
+            <div class="scrollStart">
+                <div class="scrollContainer">
+
+                    <div class="navbar">
+                        <!-- add a navbar with animations here -->
+
+                    </div>
+                    <!-- <center>
+        <button onclick="document.location='indexkart.html' ">Go Back<br>
+        </button>
+    </center> -->
+                </div>
+
+
+            </div>
+            <section class="panel red">
+                <div class="secondContainer" id="secondContainer" data-speed="clamp(0.5)" style="height: 1px;">
+
+                </div>
+
+                <header class="snapPoints">
+                    <!-- <div class="background-image"> -->
+                    <div class="background-video">
+                        <video autoplay="" muted loop="" playsinline="true">
+                            <source src="static/assets/gokart1080.mp4" type="video/mp4">
+                            Your browser does not support the video tag <!-- backup warning-->
+                        </video>
+                    </div>
+                    <div class="scroll-down">Scroll down<div class="arrow"></div>
+                    </div>
+                    <!-- </div> -->
+                    <div class="containerBackground1" style="top: 30%;">
+                        <div class="centered">
+                            <div id="box" style="top: 30%;">
+                                <div id="square">
+                                    <div id="textContainer">
+                                        <h1 class="textappear">
+                                            <span>V</span><span>e</span><span>l</span><span>o</span><span>c</span><span>i</span><span>k</span><span>i</span><span>d</span><span>s</span>
+                                        </h1>
+                                    </div>
+                                    <span id="left-side"></span>
+                                    <span id="top-side"></span>
+                                    <span id="right-side"></span>
+                                    <span id="bottom-side"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="kartAnim" class="kartAnim">
+                        <img src="static/assets/transparentKartSide.png" alt="kart1" width="25%" height="auto">
+                    </div>
+                </header>
+            </section>
+            <section class="panel orange" style="height: 100vh;">
+                <div class="intro">
+                    <!-- <div style="background-color: #f0f0f0; display: flex; align-items: center; height: fit-content;"
+                    class="pastTitle">
+                    <div style="flex: 1;">
+                        <h2 class="bigText">The premier go karting site.</h2>
+                        <p class="smallText">Velocikids is the premier go karting site in the Lower
+                            Mainland aimed at children aged 7-17. We provide
+                            world-renowned instructors, state-of-the-art go karts, and award-winning indoor and
+                            outdoor
+                            tracks. Located
+                            in downtown Port Moody, we are the go-to site for all your speed needs!</p>
+                    </div>
+                    <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+                        <img src="static/assets/track4.jpg" alt="Image" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                </div> -->
+                    <div class="containerBackground">
+                        <img src="static/assets/track4.jpg" alt="PremierGoKartingSite" style="width:100%;">
+                        <div class="centered">
+                            <h2 class="smallTextGradient" style="font-size: 5rem;">The premier go karting site.</h2>
+
+                            <div id="box">
+                                <div id="square">
+                                    <p class="smallText" class="quote" style="font-size: 20px; color: black;">Velocikids is the premier go karting site in the Lower
+                                        Mainland aimed at children aged 7-17. We provide
+                                        world-renowned instructors, state-of-the-art go karts, and award-winning indoor and
+                                        outdoor
+                                        tracks. Located
+                                        in downtown Port Moody, we are the go-to site for all your speed needs!</p>
+                                    <span id="left-side"></span>
+                                    <span id="top-side"></span>
+                                    <span id="right-side"></span>
+                                    <span id="bottom-side"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="panel next">
+
+            </section>
+        </div>
+
+    </div>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- <script src="indexJs.js"></script> -->
+    <script src="{{ url_for('static',filename='indexJs.js') }}"></script>
+
+    <!-- position: fixed elements can go outside --->
+</body>
+
+
+</html>
