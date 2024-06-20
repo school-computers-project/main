@@ -106,76 +106,10 @@ ScrollTrigger.create({
   }
 });
 
-function isInViewport(".containerBackground") {
-
-  var tl,
-    bgColor = "white",
-    easing = Power0.easeNone;
-
-  tl = new TimelineMax({
-    repeat: -1,
-    yoyo: false
-  });
-
-  // top
-  tl.fromTo("#top-side", 1,
-    {
-      width: 0,
-      background: bgColor,
-      immediateRender: false,
-      autoRound: false,
-      ease: easing
-    },
-    {
-      width: "40vw",
-      background: bgColor
-    }
-  );
-
-  // right
-  tl.fromTo("#right-side", 1,
-    {
-      height: 0,
-      background: bgColor,
-      immediateRender: false,
-      autoRound: false,
-      ease: easing
-    },
-    {
-      height: 200,
-      background: bgColor
-    }
-  );
-
-  // bottom
-  tl.fromTo("#bottom-side", 1,
-    {
-      width: 0,
-      background: bgColor,
-      immediateRender: false,
-      autoRound: false,
-      ease: easing
-    },
-    {
-      width: "40vw",
-      background: bgColor
-    }
-  );
-
-  // left
-  tl.fromTo("#left-side", 1,
-    {
-      height: 0,
-      background: bgColor,
-      immediateRender: false,
-      autoRound: false,
-      ease: easing
-    },
-    {
-      height: 200,
-      background: bgColor
-    }
-  );
+function isInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  var html = document.documentElement;
+  return true;
 }
 
 async function checkIsInViewport() {
@@ -202,3 +136,72 @@ if (ScrollTrigger.isInViewport(".centered", 0.2)) {
 
 }
 
+
+var tl,
+    bgColor = "white",
+    easing = Power0.easeNone;
+
+tl = new TimelineMax({
+        repeat:-1,
+        yoyo:false
+});
+
+// top
+tl.fromTo("#top-side", 1, 
+   {
+    width: 0, 
+    background: bgColor,
+    immediateRender: false,
+    autoRound: false,
+    ease: easing
+   }, 
+   {
+    width: "40vw", 
+    background: bgColor
+   }
+);
+
+// right
+tl.fromTo("#right-side", 1, 
+   {
+    height: 0, 
+    background: bgColor,
+    immediateRender: false,
+    autoRound: false,
+    ease: easing
+   }, 
+   {
+    height: 200, 
+    background: bgColor
+   }
+);
+
+// bottom
+tl.fromTo("#bottom-side", 1, 
+   {
+    width: 0, 
+    background: bgColor,
+    immediateRender: false,
+    autoRound: false,
+    ease: easing
+   }, 
+   {
+    width: "40vw", 
+    background: bgColor
+   }
+);
+
+// left
+tl.fromTo("#left-side", 1, 
+   {
+    height: 0, 
+    background: bgColor,
+    immediateRender: false,
+    autoRound: false,
+    ease: easing
+   }, 
+   {
+    height: 200, 
+    background: bgColor
+   }
+);
