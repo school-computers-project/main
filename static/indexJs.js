@@ -123,7 +123,7 @@ const easing = Power0.easeNone;
 
 // Define your animation timeline
 tl = gsap.timeline({
-    repeat: -1,
+    repeat: 0,
     yoyo: false
 });
 
