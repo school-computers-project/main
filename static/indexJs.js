@@ -115,18 +115,17 @@ if (ScrollTrigger.isInViewport(".centered", 0.2)) {
   console.log("In viewport");
 
 }
+var tl;
+const bgColor = "white";
+const easing = Power0.easeNone;
 
-
-var tl,
-    bgColor = "white",
-    easing = Power0.easeNone;
-
-tl = new TimelineMax({
-        repeat:-1,
-        yoyo:false
+// Define your animation timeline
+tl = gsap.timeline({
+    repeat: -1,
+    yoyo: false
 });
 
-// top
+// Add animations to the timeline
 tl.fromTo("#top-side", 1, 
    {
     width: 0, 
@@ -139,10 +138,8 @@ tl.fromTo("#top-side", 1,
     width: "40vw", 
     background: bgColor
    }
-);
-
-// right
-tl.fromTo("#right-side", 1, 
+)
+.fromTo("#right-side", 1, 
    {
     height: 0, 
     background: bgColor,
@@ -154,10 +151,8 @@ tl.fromTo("#right-side", 1,
     height: 200, 
     background: bgColor
    }
-);
-
-// bottom
-tl.fromTo("#bottom-side", 1, 
+)
+.fromTo("#bottom-side", 1, 
    {
     width: 0, 
     background: bgColor,
@@ -169,10 +164,8 @@ tl.fromTo("#bottom-side", 1,
     width: "40vw", 
     background: bgColor
    }
-);
-
-// left
-tl.fromTo("#left-side", 1, 
+)
+.fromTo("#left-side", 1, 
    {
     height: 0, 
     background: bgColor,
@@ -183,5 +176,82 @@ tl.fromTo("#left-side", 1,
    {
     height: 200, 
     background: bgColor
-   }
-);
+   });
+
+// Create a ScrollTrigger instance for the.centered element
+ScrollTrigger.create({
+    trigger: ".centered",
+    start: "top center", // Adjust this value based on when you want the animation to start
+    end: "bottom center", // Adjust this value based on when you want the animation to end
+    onEnter: () => tl.play(), // Play the animation when the trigger enters the viewport
+    onLeaveBack: () => tl.pause(0) // Pause the animation when leaving the viewport backwards (e.g., scrolling up)
+});
+
+// var tl,
+//     bgColor = "white",
+//     easing = Power0.easeNone;
+
+// tl = new TimelineMax({
+//         repeat:-1,
+//         yoyo:false
+// });
+
+// // top
+// tl.fromTo("#top-side", 1, 
+//    {
+//     width: 0, 
+//     background: bgColor,
+//     immediateRender: false,
+//     autoRound: false,
+//     ease: easing
+//    }, 
+//    {
+//     width: "40vw", 
+//     background: bgColor
+//    }
+// );
+
+// // right
+// tl.fromTo("#right-side", 1, 
+//    {
+//     height: 0, 
+//     background: bgColor,
+//     immediateRender: false,
+//     autoRound: false,
+//     ease: easing
+//    }, 
+//    {
+//     height: 200, 
+//     background: bgColor
+//    }
+// );
+
+// // bottom
+// tl.fromTo("#bottom-side", 1, 
+//    {
+//     width: 0, 
+//     background: bgColor,
+//     immediateRender: false,
+//     autoRound: false,
+//     ease: easing
+//    }, 
+//    {
+//     width: "40vw", 
+//     background: bgColor
+//    }
+// );
+
+// // left
+// tl.fromTo("#left-side", 1, 
+//    {
+//     height: 0, 
+//     background: bgColor,
+//     immediateRender: false,
+//     autoRound: false,
+//     ease: easing
+//    }, 
+//    {
+//     height: 200, 
+//     background: bgColor
+//    }
+// );
