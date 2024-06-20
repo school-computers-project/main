@@ -199,7 +199,7 @@ gsap.registerPlugin(SplitText, ScrollTrigger);
 var t2 = gsap.timeline({
   scrollTrigger: {
     trigger: "#yourElementId", // Replace #yourElementId with the ID of the element you want to start the animation when it enters the viewport
-    start: "top center+=100", // Adjust these values to control when the animation starts relative to the trigger element
+    start: "center center", // Adjust these values to control when the animation starts relative to the trigger element
     end: "bottom top", // Adjust these values to control when the animation ends relative to the trigger element
     scrub: true, // Smoothly transition through the animation over the scroll distance
   }
