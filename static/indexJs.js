@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const textContainer = new SplitType('#textContainer')
+  const textContainer = new SplitType('#textContainer')
 
-    gsap.to('.char', {
-        y: 0,
-        stagger: 0.05,
-        delay: 0.2,
-        duration: .1
-    })
+  gsap.to('.char', {
+    y: 0,
+    stagger: 0.05,
+    delay: 0.2,
+    duration: .1
+  })
 });
 
 gsap.registerPlugin(ScrollTrigger)
@@ -19,21 +19,21 @@ gsap.registerPlugin(ScrollTrigger)
 //     ease: "bounce.out",
 //     x: 500
 // });
-gsap.fromTo('.kartAnim', 
-    { x: -1000 }, // Initial position
-    {
-        // scrollTrigger: {
-        //     trigger: '.kartAnim',
-        //     start: 'top center', 
-        //     end: 'bottom center', 
-        //     scrub: true, // Smooths animation
-        //     markers: true // Optional: Adds visual markers
-        // },
-        delay: 0.5,
-        duration: 3.5, 
-        ease: "bounce.out",
-        x: 4000 // Final position, adjust smaller if you want to see kart bounce back
-    }
+gsap.fromTo('.kartAnim',
+  { x: -1000 }, // Initial position
+  {
+    // scrollTrigger: {
+    //     trigger: '.kartAnim',
+    //     start: 'top center', 
+    //     end: 'bottom center', 
+    //     scrub: true, // Smooths animation
+    //     markers: true // Optional: Adds visual markers
+    // },
+    delay: 0.5,
+    duration: 3.5,
+    ease: "bounce.out",
+    x: 4000 // Final position, adjust smaller if you want to see kart bounce back
+  }
 );
 
 
@@ -60,21 +60,116 @@ ScrollTrigger.normalizeScroll(true)
 console.log(document.querySelector("#smooth-content")); // ?
 
 ScrollSmoother.create({
-    smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
-    effects: true, // looks for data-speed and data-lag attributes on elements
-    smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
-  });
+  smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
+  effects: true, // looks for data-speed and data-lag attributes on elements
+  smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
+});
 
-  let smoother = ScrollSmoother.create({
-    smooth: 2,
-    effects: true,
-    normalizeScroll: true
-  });
-  
+let smoother = ScrollSmoother.create({
+  smooth: 2,
+  effects: true,
+  normalizeScroll: true
+});
+
+ScrollTrigger.create({
+  trigger: ".secondContainer",
+  pin: true,
+  start: "100vh",
+  end: "+=0",
+  markers: false //remove when fix
+});
+
+
+let panels = gsap.utils.toArray(".panel");
+// we'll create a ScrollTrigger for each panel just to track when each panel's top hits the top of the viewport (we only need this for snapping)
+let tops = panels.map(panel => ScrollTrigger.create({ trigger: panel, start: "top top" }));
+
+panels.forEach((panel, i) => {
   ScrollTrigger.create({
-    trigger: ".secondContainer",
+    trigger: panel,
+    start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom", // if it's shorter than the viewport, we prefer to pin it at the top
     pin: true,
-    start: "100vh",
-    end: "+=0",
-    markers: true //remove when fix
+    pinSpacing: false
   });
+});
+
+ScrollTrigger.create({
+  snap: {
+    snapTo: (progress, self) => {
+      let panelStarts = tops.map(st => st.start), // an Array of all the starting scroll positions. We do this on each scroll to make sure it's totally responsive. Starting positions may change when the user resizes the viewport
+        snapScroll = gsap.utils.snap(panelStarts, self.scroll()); // find the closest one
+      return gsap.utils.normalize(0, ScrollTrigger.maxScroll(window), snapScroll); // snapping requires a progress value, so convert the scroll position into a normalized progress value between 0 and 1
+    },
+    duration: 0.5
+  }
+});
+
+
+var tl,
+    bgColor = "white",
+    easing = Power0.easeNone;
+
+tl = new TimelineMax({
+        repeat:0,
+        yoyo:false
+});
+
+// top
+tl.fromTo("#top-side", 1, 
+   {
+    width: 0, 
+    background: bgColor,
+    immediateRender: false,
+    autoRound: false,
+    ease: easing
+   }, 
+   {
+    width: "40vw", 
+    background: bgColor
+   }
+);
+
+// right
+tl.fromTo("#right-side", 1, 
+   {
+    height: 0, 
+    background: bgColor,
+    immediateRender: false,
+    autoRound: false,
+    ease: easing
+   }, 
+   {
+    height: 200, 
+    background: bgColor
+   }
+);
+
+// bottom
+tl.fromTo("#bottom-side", 1, 
+   {
+    width: 0, 
+    background: bgColor,
+    immediateRender: false,
+    autoRound: false,
+    ease: easing
+   }, 
+   {
+    width: "40vw", 
+    background: bgColor
+   }
+);
+
+// left
+tl.fromTo("#left-side", 1, 
+   {
+    height: 0, 
+    background: bgColor,
+    immediateRender: false,
+    autoRound: false,
+    ease: easing
+   }, 
+   {
+    height: 200, 
+    background: bgColor
+   }
+);
