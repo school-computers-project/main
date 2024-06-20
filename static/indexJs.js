@@ -108,13 +108,15 @@ ScrollTrigger.create({
 
 
 
-if (isInViewport(document.querySelector(".containerBackground"))) {
-  console.log("In viewport");
-}
-if (ScrollTrigger.isInViewport(".centered", 0.2)) {
-  console.log("In viewport");
+// if (isInViewport(document.querySelector(".containerBackground"))) {
+//   console.log("In viewport");
+// }
+// if (ScrollTrigger.isInViewport(".centered", 0.2)) {
+//   console.log("In viewport");
 
-}
+// }
+
+
 var tl;
 const bgColor = "white";
 const easing = Power0.easeNone;
