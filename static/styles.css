@@ -101,7 +101,8 @@ body {
   position: relative;
 }
 
-.navbar ul li a, .dropbtn {
+.navbar ul li a,
+.dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -110,7 +111,8 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.navbar ul li a:hover, .dropdown:hover .dropbtn {
+.navbar ul li a:hover,
+.dropdown:hover .dropbtn {
   background-color: rgba(0, 0, 0, 0.9);
   color: #ffffff;
 }
@@ -146,11 +148,12 @@ body {
   display: block;
 }
 
-.kartAnim{
+.kartAnim {
   z-index: 100;
-} 
+}
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0;
@@ -158,7 +161,7 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
-.landingFullScreen{
+.landingFullScreen {
   top: 0px;
 
 }
@@ -210,7 +213,7 @@ p {
 
 
 .scroll-down {
-  position: absolute; 
+  position: absolute;
   bottom: 30px;
   left: 50%;
   transform: translate(-50%, 0);
@@ -242,12 +245,12 @@ p {
   background-size: contain;
 }
 
-#box{
-  position:relative;
+#box {
+  position: relative;
   width: 200px;
   height: 200px;
-  margin:20px auto;
-  padding:0;
+  margin: 20px auto;
+  padding: 0;
   background-color: transparent;
 }
 
@@ -301,3 +304,11 @@ p {
   height: 3px;
 }
 
+
+/** TEXT GRADIENT */
+color: #e8db4d;
+background-image: -webkit-linear-gradient(0deg, #e8db4d 34%, #00b026 100%, #c1128c 49%);
+background-clip: text;
+-webkit-background-clip: text;
+text-fill-color: transparent;
+-webkit-text-fill-color: transparent;
