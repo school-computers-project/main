@@ -120,7 +120,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 var tl;
-const bgColor = "white";
+const bgColor = "00b026";
 const easing = Power0.easeNone;
 
 // Define your animation timeline
