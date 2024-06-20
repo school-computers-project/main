@@ -117,6 +117,22 @@ function isInViewport(element) {
   );
 }
 
+async function checkIsInViewport() {
+  setInterval(async () => {
+    // Assuming 'element' is defined somewhere accessible within this scope
+    if (isInViewport(element)) {
+      console.log('Element is in viewport');
+      // Trigger your desired action here
+    } else {
+      console.log('Element is not in viewport');
+      // Optionally handle the case where the element is not in viewport
+    }
+  }, 1000); // Check every 1000 milliseconds (1 second)
+}
+
+// Example usage:
+checkIsInViewport();
+
 if (isInViewport(document.querySelector(".containerBackground"))) {
   console.log("In viewport");
 }
