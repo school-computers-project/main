@@ -304,7 +304,7 @@ p {
   height: 3px;
 }
 
-
+.smallTextGradient {
 /** TEXT GRADIENT */
 color: #e8db4d;
 background-image: -webkit-linear-gradient(0deg, #e8db4d 34%, #00b026 100%, #c1128c 49%);
@@ -312,3 +312,4 @@ background-clip: text;
 -webkit-background-clip: text;
 text-fill-color: transparent;
 -webkit-text-fill-color: transparent;
+}
