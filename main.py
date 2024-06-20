@@ -8,7 +8,7 @@ def mainApp():
     if request.method == 'GET':
         return render_template('index.html')
 
-@app.route('/api', methods=['GET', 'POST'])
+@app.route('/contact.html', methods=['GET', 'POST'])
 
 if __name__ == '__main__':
     app.run(debug=True, port=2233)
