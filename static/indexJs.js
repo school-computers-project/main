@@ -106,11 +106,6 @@ ScrollTrigger.create({
   }
 });
 
-function isInViewport(element) {
-  var rect = element.getBoundingClientRect();
-  var html = document.documentElement;
-  return true;
-}
 
 async function checkIsInViewport() {
   setInterval(async () => {
