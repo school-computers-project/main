@@ -194,7 +194,7 @@ tl.fromTo("#top-side", 0.75,
 
 // split text animation
 
-gsap.registerPlugin(SplitText, ScrollTrigger);
+gsap.registerPlugin(SplitText);
 
 var t2 = gsap.timeline({
   scrollTrigger: {
