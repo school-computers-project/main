@@ -254,6 +254,16 @@ p {
   background-color: transparent;
 }
 
+
+#box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  padding: 0;
+  background-color: transparent;
+}
+
 #square {
   position: absolute;
   top: 0;
