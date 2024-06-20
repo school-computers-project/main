@@ -120,7 +120,7 @@ function isInViewport(element) {
 async function checkIsInViewport() {
   setInterval(async () => {
     // Assuming 'element' is defined somewhere accessible within this scope
-    if (isInViewport(.containerBackground)) {
+    if (isInViewport(".containerBackground")) {
       console.log('Element is in viewport');
       // Trigger your desired action here
     } else {
