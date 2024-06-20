@@ -110,7 +110,7 @@ if (isInViewport(document.querySelector(".containerBackground"))) {
   console.log("In viewport");
 }
 
-function isInViewport(element) {
+async function isInViewport(element) {
 if (ScrollTrigger.isInViewport(element, 0.2)) {
   console.log("In viewport");
 
