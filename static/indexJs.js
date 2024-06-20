@@ -114,6 +114,8 @@ tl = new TimelineMax({
         yoyo:false
 });
 
+
+tl.addLabel('start')
 // top
 tl.fromTo("#top-side", 1, 
    {
