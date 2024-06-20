@@ -167,7 +167,7 @@ tl.fromTo("#top-side", 0.5,
     background: bgColor
    }
 )
-.fromTo("#left-side", 1, 
+.fromTo("#left-side", 4, 
    {
     height: 0, 
     background: bgColor,
