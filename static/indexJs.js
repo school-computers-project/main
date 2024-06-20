@@ -115,7 +115,7 @@ ScrollTrigger.create({
 //   console.log("In viewport");
 
 // }
-
+gsap.registerPlugin(ScrollTrigger);
 
 var tl;
 const bgColor = "white";
