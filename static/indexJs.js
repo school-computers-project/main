@@ -115,7 +115,7 @@ function isInViewport(element) {
   );
 }
 
-if (isInViewport(document.querySelector("#smooth-content"))) {
+if (isInViewport(document.querySelector("containerBackground"))) {
   console.log("In viewport");
 }
 
