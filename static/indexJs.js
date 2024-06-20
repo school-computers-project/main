@@ -127,7 +127,7 @@ async function checkIsInViewport() {
       console.log('Element is not in viewport');
       // Optionally handle the case where the element is not in viewport
     }
-  }, 200); // Check every 1000 milliseconds (1 second)
+  }, 1000); // Check every 1000 milliseconds (1 second)
 }
 
 // Example usage:
