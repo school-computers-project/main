@@ -109,69 +109,69 @@ var tl,
     bgColor = "white",
     easing = Power0.easeNone;
 
-tl = new TimelineMax({
-        repeat:0,
-        yoyo:false
-});
+// tl = new TimelineMax({
+//         repeat:0,
+//         yoyo:false
+// });
 
 
-tl.addLabel('start')
-// top
-tl.fromTo("#top-side", 1, 
-   {
-    width: 0, 
-    background: bgColor,
-    immediateRender: false,
-    autoRound: false,
-    ease: easing
-   }, 
-   {
-    width: "40vw", 
-    background: bgColor
-   }
-);
+// tl.addLabel('start')
+// // top
+// tl.fromTo("#top-side", 1, 
+//    {
+//     width: 0, 
+//     background: bgColor,
+//     immediateRender: false,
+//     autoRound: false,
+//     ease: easing
+//    }, 
+//    {
+//     width: "40vw", 
+//     background: bgColor
+//    }
+// );
 
-// right
-tl.fromTo("#right-side", 1, 
-   {
-    height: 0, 
-    background: bgColor,
-    immediateRender: false,
-    autoRound: false,
-    ease: easing
-   }, 
-   {
-    height: 200, 
-    background: bgColor
-   }
-);
+// // right
+// tl.fromTo("#right-side", 1, 
+//    {
+//     height: 0, 
+//     background: bgColor,
+//     immediateRender: false,
+//     autoRound: false,
+//     ease: easing
+//    }, 
+//    {
+//     height: 200, 
+//     background: bgColor
+//    }
+// );
 
-// bottom
-tl.fromTo("#bottom-side", 1, 
-   {
-    width: 0, 
-    background: bgColor,
-    immediateRender: false,
-    autoRound: false,
-    ease: easing
-   }, 
-   {
-    width: "40vw", 
-    background: bgColor
-   }
-);
+// // bottom
+// tl.fromTo("#bottom-side", 1, 
+//    {
+//     width: 0, 
+//     background: bgColor,
+//     immediateRender: false,
+//     autoRound: false,
+//     ease: easing
+//    }, 
+//    {
+//     width: "40vw", 
+//     background: bgColor
+//    }
+// );
 
-// left
-tl.fromTo("#left-side", 1, 
-   {
-    height: 0, 
-    background: bgColor,
-    immediateRender: false,
-    autoRound: false,
-    ease: easing
-   }, 
-   {
-    height: 200, 
-    background: bgColor
-   }
-);
+// // left
+// tl.fromTo("#left-side", 1, 
+//    {
+//     height: 0, 
+//     background: bgColor,
+//     immediateRender: false,
+//     autoRound: false,
+//     ease: easing
+//    }, 
+//    {
+//     height: 200, 
+//     background: bgColor
+//    }
+// );
