@@ -114,6 +114,7 @@ async function isInViewport(element) {
 if (ScrollTrigger.isInViewport(element, 0.2)) {
   console.log("In viewport");
 
+  setInterval(async () => {
   var tl,
   bgColor = "white",
   easing = Power0.easeNone;
@@ -182,8 +183,9 @@ tl.fromTo("#left-side", 1,
   background: bgColor
  }
 );
+}1000); // Check every 1000 milliseconds (1 second)
 }
-}
+
 
 
 var tl,
