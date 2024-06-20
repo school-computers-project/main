@@ -245,7 +245,7 @@ p {
   background-size: contain;
 }
 
-.box1 {
+.containerBackground {
   position: relative;
   width: 200px;
   height: 200px;
