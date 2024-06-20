@@ -192,8 +192,39 @@ tl.fromTo("#top-side", 0.75,
 
 // Create a ScrollTrigger instance for the.centered element
 
+// split text animation
+
+gsap.registerPlugin(SplitText, ScrollTrigger);
+
+var t2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#yourElementId", // Replace #yourElementId with the ID of the element you want to start the animation when it enters the viewport
+    start: "top center+=100", // Adjust these values to control when the animation starts relative to the trigger element
+    end: "bottom top", // Adjust these values to control when the animation ends relative to the trigger element
+    scrub: true, // Smoothly transition through the animation over the scroll distance
+  }
+});
+
+mySplitText = new SplitText("#quote", { type: "words,chars" });
+chars = mySplitText.chars; // An array of all the divs that wrap each character
+
+gsap.set("#quote", { perspective: 400 });
+
+console.log(chars);
+
+t2.from(chars, {
+  duration: 0.8,
+  opacity: 0,
+  scale: 0,
+  y: 80,
+  rotationX: 180,
+  transformOrigin: "0% 50% -50",
+  ease: "back",
+  stagger: 0.01
+});
 
 // var tl,
+
 //     bgColor = "white",
 //     easing = Power0.easeNone;
 
