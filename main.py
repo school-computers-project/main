@@ -39,6 +39,7 @@ def navbarTest():
         return render_template('navbarTest.html')
     
 @app.route('/waiver', methods=['GET', 'POST'])
+def waiver():
     if request.method == 'GET':
         return render_template('waiver.html')
 
