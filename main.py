@@ -13,6 +13,10 @@ def contact():
     if request.method == 'GET':
         return render_template('contact.html')
 
+@app.route('/navbarTest', methods=['GET', 'POST'])
+def navbarTest():
+    if request.method == 'GET':
+        return render_template('navbarTest.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=2233)
