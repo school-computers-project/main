@@ -255,9 +255,6 @@ input[type=tel]:focus {
   border: 3px solid #555;
 }
 
-input[type=tel]:invalid {
-  color: red;
-}
 ...
 input,
 textarea,
