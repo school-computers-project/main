@@ -78,11 +78,14 @@ window.addEventListener("load", applyGlobalAnimation);
 
 // submit button
 
-function handleSubmit() {
-  console.log('Button pressed!');
-}
-
-
+document.addEventListener('DOMContentLoaded', function() {
+  var submitButton = document.getElementById('submitButton');
+  submitButton.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevents the default action of the <a> tag
+      var form = document.getElementById('myForm');
+      form.submit(); // Submits the form
+  });
+});
 const btn = document.querySelector('.btn-content');
 const wrapper = document.querySelector(".btn-wrapper>a");
 function hoverAnimation(){
