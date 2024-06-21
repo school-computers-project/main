@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
       form.submit(); // Submits the form
   });
 });
+
 const btn = document.querySelector('.btn-content');
 const wrapper = document.querySelector(".btn-wrapper>a");
 function hoverAnimation(){
