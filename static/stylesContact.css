@@ -80,6 +80,12 @@ body {
   height: 100%; /* independent scrolling */
 }
 
+
+.scrollEnabled {
+  overflow-y: auto;
+  height: 100%; /* independent scrolling */
+}
+
 ::-webkit-scrollbar {
   width: 0;
   /* Remove scrollbar space */
