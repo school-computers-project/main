@@ -29,7 +29,7 @@ def contact():
         with open('form_submissions.txt', 'a') as f:
             f.write(data_string)
 
-        return "Form submitted successfully Data has been written to the file."
+        return render_template("submitt")
     if request.method == 'GET':
         return render_template('contact.html')
 
