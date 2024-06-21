@@ -15,7 +15,7 @@ def contact():
         firstname = request.form.get('fname')
         lastname = request.form.get('lname')
         email = request.form.get('emailAddr')
-        phonenum = request.form.get('phonenum')
+        phonenum = request.form.get('phoneNum')
         subject = request.form.get('subject')
         message = request.form.get('message')
         perferredMethodOfContact = request.form.get('perferredMethodOfContact')
