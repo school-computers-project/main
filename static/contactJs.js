@@ -80,7 +80,6 @@ window.addEventListener("load", applyGlobalAnimation);
 
 function onPress() {
   console.log('Button pressed!');
-  // You can add any action you want to perform on button press inside this function
 }
 
 
