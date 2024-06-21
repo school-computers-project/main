@@ -78,6 +78,12 @@ window.addEventListener("load", applyGlobalAnimation);
 
 // submit button
 
+function onPress() {
+  console.log('Button pressed!');
+  // You can add any action you want to perform on button press inside this function
+}
+
+
 const btn = document.querySelector('.btn-content');
 const wrapper = document.querySelector(".btn-wrapper>a");
 function hoverAnimation(){
