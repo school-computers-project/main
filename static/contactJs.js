@@ -75,3 +75,5 @@ function applyGlobalAnimation() {
 }
 
 window.addEventListener("load", applyGlobalAnimation);
+
+// submit button
