@@ -81,11 +81,10 @@ body {
 }
 
 .row {
-
   overflow: hidden;
   /* Additional styling for the container */
-  width: 100%; /* Adjust as needed */
-  height: 500px; /* Adjust as needed */
+  width: 100vw; /* Adjust as needed */
+  height: 100vh; /* Adjust as needed */
 }
 
 /* Clear floats after the columns */
