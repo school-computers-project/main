@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var submitButton = document.getElementById('submitButton');
   submitButton.addEventListener('click', function(e) {
       e.preventDefault(); // Prevents the default action of the <a> tag
-      var form = document.getElementById('myForm');
+      var form = document.getElementById('contactForm');
       form.submit(); // Submits the form
   });
 });
