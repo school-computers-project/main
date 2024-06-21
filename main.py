@@ -14,7 +14,8 @@ def contact():
         # Accessing form data
         firstname = request.form.get('firstname')
         lastname = request.form.get('lastname')
-        country = request.form.get('country')
+        email = request.form.get('emailaddr')
+        phonenum = request.form.get('phonenum')
         subject = request.form.get('subject')
 
         # Constructing the data string to be written to the file
