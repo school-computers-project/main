@@ -76,7 +76,7 @@ body {
 
 .column30,
 .column70 {
-  overflow-y: auto;
+  overflow-y: hidden;
   height: 100%; /* independent scrolling */
 }
 
