@@ -22,7 +22,7 @@ def contact():
         newsletterOk = request.form.get('newsletter')
 
         # Constructing the data string to be written to the file
-        data_string = f"First Name: {firstname}, Last Name: {lastname}, Country: {country}, Subject: {subject}\n"
+        data_string = f"fName: {firstname}, lName: {lastname}, email: {email}, phone: {phonenum}, subject: {subject}, message: {message}, contactMethod: {perferredMethodOfContact}, newsletter: {newsletterOk}\n"
         print(f"First Name: {firstname}, Last Name: {lastname}, Country: {country}, Subject: {subject}")
 
         # Writing the data to a text file
