@@ -76,23 +76,15 @@ body {
 
 .column30,
 .column70 {
-  height: 100%;
+  overflow-y: auto;
+  height: 100%; /* independent scrolling */
 }
-
-/* ::-webkit-scrollbar {
-  width: 0;
-  /* Remove scrollbar space */
-  background: transparent;
-  /* Optional: just make scrollbar invisible */
-} */
 
 .row {
   overflow: hidden;
   /* Additional styling for the container */
-  width: 100vw;
-  /* Adjust as needed */
-  height: 100vh;
-  /* Adjust as needed */
+  width: 100vw; /* Adjust as needed */
+  height: 100vh; /* Adjust as needed */
 }
 
 /* Clear floats after the columns */
@@ -225,7 +217,7 @@ body {
 
 input[type=text] {
   color: white;
-  border-radius: 10px;
+  border-radius:10px;
 }
 
 input[type=text]:focus {
@@ -233,7 +225,8 @@ input[type=text]:focus {
 }
 
 
-... input,
+...
+input,
 textarea,
 select {
   ...
@@ -248,7 +241,7 @@ textarea {
   box-sizing: border-box;
   width: 100%;
   padding: 0.5rem 0.75rem;
-  border-radius: 10px;
+  border-radius:10px;
 }
 
 select {
