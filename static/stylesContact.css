@@ -176,6 +176,7 @@
 }
 .btn-content{
     transform:translateX(10px);
+    font-family: "Montserrat", sans-serif;
 }
 .btn-circle{
   background-color:#fff555;
