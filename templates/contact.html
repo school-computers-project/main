@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css">  -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='stylesContact.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='favicon.ico')}}">
+    <!-- "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <link rel="stylesheet" hrjsef="styles.css"> 
+    -->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /* .scrollStart {
+            max-height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#services" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="#service1">Service 1</a>
+                    <a href="#service2">Service 2</a>
+                    <a href="#service3">Service 3</a>
+                </div>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="./contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="column30">
+            <div class="main-wrapper">
+                <div class="header-txt">
+                    <h1>Contact us!</h1>
+                </div>
+                <div class="para-txt">
+                    <p>
+                        <br />
+                        Thank you for choosing Velocikids Go-Karting! If you have any questions, comments, or need
+                        assistance, please fill out the form below, and our team will get back to you as soon as
+                        possible.<br />
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="column70">
+            <img width="100vh" height="auto" src="static/assets/staff/VirgilHughmann.jpg">
+        </div>
+    </div>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- <script src="indexJs.js"></script> -->
+    <script src="{{ url_for('static',filename='contactJs.js') }}"></script>
+
+</body>
+
+</html>
