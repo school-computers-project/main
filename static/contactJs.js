@@ -78,7 +78,7 @@ window.addEventListener("load", applyGlobalAnimation);
 
 // submit button
 
-function onPress() {
+function handleSubmit() {
   console.log('Button pressed!');
 }
 
