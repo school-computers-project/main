@@ -80,6 +80,13 @@ body {
   height: 100%; /* independent scrolling */
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
 .row {
   overflow: hidden;
   /* Additional styling for the container */
