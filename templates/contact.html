@@ -57,20 +57,39 @@
                         Thank you for choosing Velocikids Go-Karting! If you have any questions, comments, or need
                         assistance, please fill out the form below, and our team will get back to you as soon as
                         possible.<br />
-                    <form>
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
                         <br />
-                        <label for="lname">Last Name</label>
+                    <form>
+                        <label for="fname">First Name: </label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                        <br />
+                        <label for="lname">Last Name: </label>
                         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
                         <br />
-                        <label for="country">Country</label>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
+                        <label for="emailAddr"">Last Name: </label>
+                        <input type="text" id="emailAddr" name="emailAddr" placeholder="Your email address..">
+                        <br />
+                        <label for="phoneNum">Phone Number: </label>
+                        <input type="text" id="phoneNum" name="phoneNum" placeholder="Your phone number..">
+                        <br />
+                        <label for="Subject">Subject: </label>
+                        <select id="Subject" name="Subject">
+                            <option value="generalInquiry">General Inquiry</option>
+                            <option value="bookingNreservations">Booking and Reservations</option>
+                            <option value="bdayParties">Birthday Parties</option>
+                            <option value="corporate">Corporate Events</option>
+                            <option value="safety">Safety Concerns</option>
+                            <option value="other">Other</option>
                         </select>
-
+                        <label for="contactMethod">Perferred Method of Contact</label> 
+                        <select id="contactMethod" name="contactMethod">
+                            <option value="email">General Inquiry</option>
+                            <option value="phone">Booking and Reservations</option>
+                        </select>
+                        <label for="contactMethod">Perferred Method of Contact</label> 
+                        <select id="contactMethod" name="contactMethod">
+                            <option value="email">General Inquiry</option>
+                            <option value="phone">Booking and Reservations</option>
+                        </select>
                         <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="light"></div>
                         <input type="submit" value="Submit">
                     </form>
