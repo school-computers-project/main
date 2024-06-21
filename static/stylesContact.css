@@ -74,6 +74,12 @@ body {
   width: 55%;
 }
 
+.column30,
+.column70 {
+  overflow-y: auto;
+  height: 100%; /* Adjust as needed */
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
