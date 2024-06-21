@@ -12,8 +12,8 @@ def mainApp():
 def contact():
     if request.method == 'POST':
         # Accessing form data
-        firstname = request.form.get('firstname')
-        lastname = request.form.get('lastname')
+        firstname = request.form.get('fname')
+        lastname = request.form.get('lname')
         email = request.form.get('emailaddr')
         phonenum = request.form.get('phonenum')
         subject = request.form.get('subject')
