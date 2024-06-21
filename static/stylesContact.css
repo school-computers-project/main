@@ -201,3 +201,8 @@ body {
   top: 25%;
   left: -50%;
 }
+
+input[type=text] {
+  background-color: #3CBC8D;
+  color: white;
+}
