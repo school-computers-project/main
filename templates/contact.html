@@ -14,7 +14,7 @@
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='stylesContact.css') }}">
     <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='favicon.ico')}}">
-    <link rel="stylesheet" href="https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms.css" />
+    
     <!-- "{{ url_for('static',filename='styles/mainpage.css') }}">
     <link rel="stylesheet" hrjsef="styles.css"> 
     -->
@@ -61,6 +61,7 @@
                         possible.<br />
                         <br />
                     <form>
+                        <link rel="stylesheet" href="https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms.css" />
                         <br />
                         <label for="fname">First Name: </label>
                         <input type="text" id="fname" name="firstname" placeholder="Your first name..">
