@@ -18,7 +18,7 @@ def contact():
         phonenum = request.form.get('phoneNum')
         subject = request.form.get('Subject')
         message = request.form.get('message')
-        perferredMethodOfContact = request.form.get('perferredMethodOfContact')
+        perferredMethodOfContact = request.form.get('contactMethod')
 
         # Constructing the data string to be written to the file
         data_string = f"First Name: {firstname}, Last Name: {lastname}, Country: {country}, Subject: {subject}\n"
