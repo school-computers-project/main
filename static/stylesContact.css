@@ -249,6 +249,7 @@ textarea {
   width: 100%;
   padding: 0.5rem 0.75rem;
   border-radius:10px;
+  color: #000;
 }
 
 select {
