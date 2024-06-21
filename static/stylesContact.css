@@ -204,11 +204,13 @@ body {
 
 input[type=text] {
   color: white;
+  border-radius:10px;
 }
 
 input[type=text]:focus {
   border: 3px solid #555;
 }
+
 
 ...
 input,
