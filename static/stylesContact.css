@@ -212,15 +212,11 @@ input[type=text]:focus {
 }
 
 ...
-legend,
-fieldset,
-select,
-textarea,
 input,
-button {
+textarea,
+select {
   ...
 }
-
 
 input[type="text"],
 input[type="email"],
