@@ -231,6 +231,15 @@ input[type=text]:focus {
   border: 3px solid #555;
 }
 
+input[type=number] {
+  color: white;
+  border-radius:10px;
+}
+
+input[type=number]:focus {
+  border: 3px solid #555;
+}
+
 
 ...
 input,
