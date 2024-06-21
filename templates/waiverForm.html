@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<html lang=en-US>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css">  -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='stylesContact.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='favicon.ico')}}">
+    <!-- "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <link rel="stylesheet" hrjsef="styles.css"> 
+    -->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /* .scrollStart {
+            max-height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+                <a href="#services" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="#service1">Service 1</a>
+                    <a href="#service2">Service 2</a>
+                    <a href="#service3">Service 3</a>
+                </div>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="./contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="column30">
+            <div class="main-wrapper" style="padding: 20px;">
+                <div class="header-txt">
+                    <h1>Waiver form</h1>
+                </div>
+                <div class="para-txt" style="text-align: left; hyphens: auto">
+                    <p>
+                        <br />
+                        Participant information: <br />
+                        <br />
+                    <form id="contactForm" method="POST" action="/contact">
+                        <br />
+                        <label for="fname">First Name: </label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                        <br />
+                        <label for="lname">Last Name: </label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <br />
+                        <label for="DOB">Date of Birth: <Address></Address> </label>
+                        <input type="text" id="DOB" name="DOB" placeholder="Your date of birth..">
+                        <label for="gender">Gender: </label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <br />
+                        <label for="address">Address: </label>
+                        <input type="text" id="address" name="address" placeholder="Your address..">
+                        <br />
+                        <label for="city">City: </label>
+                        <input type="text" id="city" name="city" placeholder="Your city.." style="width: 50%;">
+                        <label for="state">State: </label>
+                        <input type="text" id="state" name="state" placeholder="Your address.." style="width: 20%;">
+                        <label for="zip">Zip code: </label>
+                        <input type="text" id="zip" name="zip" placeholder="Your address.." style="width: 30%;">
+                        <br />
+                        Please complete the captcha to prove that you are human.
+                        <br />
+                        <br />
+                        <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="light"
+                            style="text-align: center;"></div>
+                    </form>
+                    <div class="btn-wrapper">
+                        <a href="#" id="submitButton" class="submit-button"">
+                            <div class=" btn-content">Submit!
+                    </div>
+                    <div class="btn-circle">
+                        <svg data-v-157867a6="" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="btn__icon h-10 w-10 overflow-hidden">
+                            <path data-v-157867a6="" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
+                                class="btn__path fill-current"></path>
+                        </svg>
+                    </div>
+                    </a>
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="column70">
+        <img width="100%" height="auto" src="static/assets/staff/VirgilHughmann.jpg">
+    </div>
+    </div>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- <script src="indexJs.js"></script> -->
+    <script src="{{ url_for('static',filename='contactJs.js') }}"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+
+</body>
+
+</html>
