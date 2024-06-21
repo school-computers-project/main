@@ -246,6 +246,15 @@ input[type=number]:focus {
   border: 3px solid #555;
 }
 
+input[type=tel] {
+  color: white;
+  border-radius:10px;
+}
+
+input[type=tel]:focus {
+  border: 3px solid #555;
+}
+
 input:invalid {
   color: red;
 }
