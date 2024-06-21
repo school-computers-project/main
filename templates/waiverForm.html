@@ -86,4 +86,62 @@
                         <input type="text" id="zip" name="zip" placeholder="H0H0H0" style="width: 25%; display: inline;">
                         <br />
                         <br />
-                        <label for="phoneNum">Phone Numb
+                        <label for="phoneNum">Phone Number: </label>
+                        <input type="number" id="email" name="email" placeholder="1234567890" style="width: 25%; display: inline;">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="pablonara@pablonara.com" style="width: 37%; display: inline;">
+                        <br />
+                        <p>
+                            <br />
+                            Emergency Contact Information: <br />
+                            <br />
+                        </p>
+                        <br />
+                        <label for="eName">Emergency Contact Name: </label>
+                        <input type="text" id="eName" name="firstname" placeholder="Your first name..">
+                        <br />
+                        <label for="relationship">Last Name: </label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <br />
+                        <br />
+                        Please complete the captcha to prove that you are human.
+                        <br />
+                        <br />
+                        <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="light"
+                            style="text-align: center;"></div>
+                    </form>
+                    <div class="btn-wrapper">
+                        <a href="#" id="submitButton" class="submit-button"">
+                            <div class=" btn-content">Submit!
+                    </div>
+                    <div class="btn-circle">
+                        <svg data-v-157867a6="" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="btn__icon h-10 w-10 overflow-hidden">
+                            <path data-v-157867a6="" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
+                                class="btn__path fill-current"></path>
+                        </svg>
+                    </div>
+                    </a>
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="column70">
+        <img width="100%" height="auto" src="static/assets/racers21.jpg">
+    </div> -->
+    </div>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- <script src="indexJs.js"></script> -->
+    <script src="{{ url_for('static',filename='contactJs.js') }}"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+
+</body>
+
+</html>
