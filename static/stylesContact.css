@@ -181,7 +181,8 @@ body {
 }
 
 .btn-content {
-    font-family: "Montserrat", sans-serif;
+  transform: translateX(10px);
+  font-family: "Montserrat", sans-serif;
 }
 
 .btn-circle {
