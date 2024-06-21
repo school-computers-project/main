@@ -77,14 +77,13 @@ body {
 .column30,
 .column70 {
   height: 100%;
+}
 
-  /* independent scrolling */
-  ::-webkit-scrollbar {
-    width: 0;
-    /* Remove scrollbar space */
-    background: transparent;
-    /* Optional: just make scrollbar invisible */
-  }
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
 }
 
 .row {
