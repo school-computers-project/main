@@ -42,6 +42,11 @@ def navbarTest():
 def waiver():
     if request.method == 'GET':
         return render_template('waiver.html')
+    
+@app.route('/waiverForm', methods=['GET', 'POST'])
+def waiverForm():
+    if request.method == 'GET':
+        return render_template('waiverForm.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=2233)
