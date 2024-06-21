@@ -23,7 +23,7 @@ def contact():
 
         # Constructing the data string to be written to the file
         data_string = f"fName: {firstname}, lName: {lastname}, email: {email}, phone: {phonenum}, subject: {subject}, message: {message}, contactMethod: {perferredMethodOfContact}, newsletter: {newsletterOk}\n"
-        print(f"First Name: {firstname}, Last Name: {lastname}, Country: {country}, Subject: {subject}")
+        print(f"Data: {data_string}")
 
         # Writing the data to a text file
         with open('form_submissions.txt', 'a') as f:
