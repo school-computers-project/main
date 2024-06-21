@@ -229,3 +229,7 @@ textarea {
   padding: 0.5rem 0.75rem;
   min-height: 10rem;
 }
+
+select {
+  background: url("images/down-arrow.svg") no-repeat center right 0.75rem;
+}
