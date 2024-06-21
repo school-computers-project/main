@@ -10,6 +10,21 @@ def mainApp():
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
+    if request.method == 'POST':
+        # Accessing form data
+        firstname = request.form.get('firstname')
+        lastname = request.form.get('lastname')
+        country = request.form.get('country')
+        subject = request.form.get('subject')
+
+        # Constructing the data string to be written to the file
+        data_string = f"First Name: {firstname}, Last Name: {lastname}, Country: {country}, Subject: {subject}\n"
+
+        # Writing the data to a text file
+        with open('form_submissions.txt', 'a') as f:
+            f.write(data_string)
+
+        return "Form submitted successfully Data has been written to the file."
     if request.method == 'GET':
         return render_template('contact.html')
 
