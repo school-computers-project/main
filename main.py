@@ -14,7 +14,7 @@ def contact():
         # Accessing form data
         firstname = request.form.get('fname')
         lastname = request.form.get('lname')
-        email = request.form.get('emailaddr')
+        email = request.form.get('emailAddr')
         phonenum = request.form.get('phonenum')
         subject = request.form.get('subject')
         message = request.form.get('message')
