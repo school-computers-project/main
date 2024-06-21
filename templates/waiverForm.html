@@ -92,7 +92,9 @@
                         <br />
                         <label for="phoneNum">Phone Number: </label>
                         <input type="tel" id="phoneNum" name="phoneNum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
-                            id="phoneNum" name="phoneNum" placeholder="1234567890" style="width: 25%; display: inline;">
+                            id="phoneNum" name="phoneNum" placeholder="1234567890"
+                            onkeyup="this.value = this.value.replace(/[^0-9-]/g, '');"
+                            style="width: 25%; display: inline;">
                         <label for="email">Email: </label>
                         <input type="email" id="email" name="email" placeholder="pablonara@pablonara.com"
                             style="width: 37%; display: inline;">
