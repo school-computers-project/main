@@ -76,7 +76,6 @@ body {
 
 .column30,
 .column70 {
-  overflow-y: hidden;
   height: 100%; /* independent scrolling */
   ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
