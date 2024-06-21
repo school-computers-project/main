@@ -77,7 +77,11 @@ body {
 .column30,
 .column70 {
   overflow-y: auto;
-  height: 100%; // independent scrolling
+  height: 100%; .first-column,
+  .second-column {
+    overflow-y: auto;
+    height: 100%; /* Adjust as needed */
+  }independent scrolling
 }
 
 /* Clear floats after the columns */
