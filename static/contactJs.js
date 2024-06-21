@@ -77,3 +77,48 @@ function applyGlobalAnimation() {
 window.addEventListener("load", applyGlobalAnimation);
 
 // submit button
+
+const btn = document.querySelector('.btn-content');
+const wrapper = document.querySelector(".btn-wrapper>a");
+function hoverAnimation(){
+  const t1 = gsap.timeline();
+  
+  t1.to(btn,{
+    x:-10,
+    duration:0.65,
+    ease: "expo.out",
+  })
+  t1.to('.btn-circle',{
+    scale:1,
+    duration:0.65,
+    ease: "expo.out",
+  },0)
+  t1.to('.btn-circle>svg',{
+    x:23,
+    duration:0.65,
+    ease: "expo.out",
+    delay:-0.55,
+  })
+}
+function hoverAnimationReset(){
+  const t2 = gsap.timeline();
+  
+  t2.to(btn,{
+    x:10,
+    duration:0.65,
+    ease: "expo.out",
+  })
+   t2.to('.btn-circle',{
+     scale:0,
+    duration:0.65,
+     ease: "expo.out",
+  },0)
+    t2.to('.btn-circle>svg',{
+    x:-23,
+    duration:0.65,
+    ease: "expo.out",
+    delay:-0.55,
+  })
+}
+wrapper.addEventListener("mouseenter", hoverAnimation);
+wrapper.addEventListener("mouseleave", hoverAnimationReset);
