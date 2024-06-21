@@ -80,6 +80,8 @@ body {
   height: 100%; /* independent scrolling */
 }
 
+.row {}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
